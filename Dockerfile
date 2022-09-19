@@ -1,6 +1,6 @@
-FROM node:10
+FROM node:latest
 WORKDIR /usr/app
 COPY . .
 RUN npm install
-EXPOSE 9981
+EXPOSE 80
 CMD ["node","app.js"]
